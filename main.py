@@ -1,10 +1,12 @@
 import time
 import random
 from speech import Speech
+from play import Play
 
 if __name__ == "__main__":
     # sp = Speech("./wav/", tts_mode=True)
-    sp = Speech("./wav/", tts_mode=False)
+    # sp = Speech("./wav/", tts_mode=False)
+    sp = Play("./wav/")
     count = 1
     while (True):
         count += 1
@@ -18,4 +20,4 @@ if __name__ == "__main__":
 
         if count == 3:
             count = 1
-        time.sleep(1.0)
+        time.sleep(0.2)
